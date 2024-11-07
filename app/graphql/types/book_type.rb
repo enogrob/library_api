@@ -4,7 +4,7 @@ module Types
       field :title, String, null: false
       field :author, String, null: false
       field :genre, String, null: true
-      field :published_year, Integer, null: true
+      field :publish_year, Integer, null: true
     end
   end
   

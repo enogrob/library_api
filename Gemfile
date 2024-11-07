@@ -50,3 +50,7 @@ end
 gem "graphql", "~> 2.4"
 
 gem "rspec-rails", "~> 7.0", :groups => [:development, :test]
+
+gem "factory_bot", "~> 6.5", :groups => [:development, :test]
+
+gem "pry", "~> 0.14.2"

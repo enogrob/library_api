@@ -64,3 +64,10 @@ RSpec.configure do |config|
   # arbitrary gems may also be filtered via:
   # config.filter_gems_from_backtrace("gem name")
 end
+
+# spec/rails_helper.rb
+Dir[Rails.root.join('spec/factories/**/*.rb')].sort.each { |file| require file }
+RSpec.configure do |config|
+  config.include FactoryBot::Syntax::Methods
+end
+
